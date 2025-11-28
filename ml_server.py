@@ -24,7 +24,7 @@ class PlantData(BaseModel):
     Electrochemical_Signal: float = -140  # default value
 
 # Prediction endpoint
-@app.post("/predict")
+@app.post("/predict_env")
 def predict_plant_health(data: PlantData):
     # Convert to DataFrame
     df = pd.DataFrame([[

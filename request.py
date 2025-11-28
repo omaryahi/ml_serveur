@@ -13,6 +13,6 @@ data = {
     "Potassium_Level": 180,
     "Chlorophyll_Content": 52
 }
-
+#{'prediction': 'Healthy'/'High Stress'/Moderate Stress}
 response = requests.post(url, json=data)
 print(response.json())
